@@ -76,7 +76,7 @@ main {
 
 .section-main .info h1 {
     flex-basis: 50%;
-    font-size: 60px;
+    font-size: 65px;
     line-height: 60px;
 }
 
@@ -307,8 +307,29 @@ nav .icon {
         width: 100%;
     }
 
-    .card {
+    .cards {
         display: block;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .card span {
+        font-size: 40px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .card p {
+        font-size: 12px;
+        line-height: 25px;
     }
 
     .attribution {

@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* ================= nav =================== */
+header {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.menu .menu-links {
+    display: inline-flex;
+    list-style: none;
+    gap: 40px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+.menu li a:hover {
+    color: var(--Soft-red);
+}
+
+/* ===================== main ===================== */
+main {
+    display: flex;
+    gap: 20px;
+}
+
+/* ================== section main ==================*/
+.section-main {
+    width: 70%;
+}
+
+.section-main .img {
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 320px;
+}
+
+.section-main .info {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.section-main .info h1 {
+    flex-basis: 50%;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.section-main .description-info {
+    flex-basis: 50%;
+}
+
+.section-main .description-info p {
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--Dark-grayish-blue);
+}
+
+.section-main .description-info button {
+    margin-top: 30px;
+    padding: 18px 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border: none;
+    background: var(--Soft-red);
+    color: var(--Off-white);
+    cursor: pointer;
+}
+
+.section-main .description-info button:hover {
+    background: var(--Very-dark-blue);
+}
+
+/* ================== section second ================= */
+.section-second {
+    width: 31%;
+    height: 100%;
+    padding: 20px;
+    color: var(--Off-white);
+    background: var(--Very-dark-blue);
+    margin-bottom: 30px;
+}
+
+.section-second h2 {
+    color: var(--Soft-orange);
+    font-size: 40px;
+    margin: 13px 0;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.section-second h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.section-second h3:hover {
+    color: var(--Soft-orange);
+}
+
+.section-second p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    margin-bottom: 23px;
+    color: var(--grayish-blue);
+}
+
+/* ===================== cards ===================*/
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    gap: 15px;
+    width: 400px;
+    height: 160px;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card span {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+}
+
+.card h2 {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.card h2:hover {
+    color: var(--Soft-red);
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: var(--Dark-grayish-blue);
+}
+
+
+
+/* =================== footer ======================*/
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+nav .icon {
+    display: none;
+}
+
+/* ================= responsive ==================== */
+@media (max-width: 1100px) {
+    .section-main .info h1 {
+        font-size: 50px;
+    }
+
+    .section-second h2 {
+        color: var(--Soft-orange);
+        font-size: 30px;
+        margin: 13px 0;
+    }
+
+    .section-second h3 {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .section-second p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 23px;
+    }
+
+    .card span {
+        font-size: 30px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-main .info h1 {
+        font-size: 45px;
+    }
+
+    .section-second h2 {
+        color: var(--Soft-orange);
+        font-size: 20px;
+        margin: 13px 0;
+    }
+
+    .section-second h3 {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .section-second p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 23px;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+    .card span {
+        font-size: 30px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .menu .menu-links {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
+    .section-main {
+        width: 100%;
+    }
+
+    .section-main .info {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .section-second {
+        width: 100%;
+    }
+
+    .card {
+        display: block;
+    }
+
+    .attribution {
+        margin-top: 150px;
+    }
+
+    nav .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .menu-links {
+        display: block;
+        position: fixed;
+        background: var(--Off-white);
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 80px;
+        padding-left: 10px;
+    }
+
+    .menu-links .icon {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .menu-links li {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        width: 90%;
+    }
+
+    .section-main .img {
+        background-image: url(./assets/images/image-web-3-mobile.jpg);
+        background-size: contain;
+    }
+
+    .section-main .info {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .section-main .info h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-top: -50px;
+        margin-bottom: 15px;
+    }
+
+    .cards {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .card span {
+        font-size: 40px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .card p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    nav .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .menu-links {
+        display: block;
+        position: fixed;
+        background: var(--Off-white);
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 80px;
+        padding-left: 10px;
+        transition: right 0.5s ease;
+    }
+
+    .menu-links .icon {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .menu-links li {
+        padding: 15px;
+    }
+
+}
